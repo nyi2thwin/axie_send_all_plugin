@@ -30,10 +30,7 @@ sendButton.onclick = function(element) {
 					setTimeout(function(){ 
 						document.getElementById('sendButton').innerHTML = "Send"; 
 						document.getElementById('sendButton').disabled = false;
-					}, 4000);
-					
-					
-				    //chrome.tabs.executeScript(tab.id, {file: 'inject.js'});
+					}, 4000);	
 				});
 	        });
 	    });
