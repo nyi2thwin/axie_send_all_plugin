@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<style>
+	body{
+		color: rgb(66, 66, 66);
+	    font-family: "Varela Round", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+	}
+	input{
+	    display: inline-block;
+	    width: auto;
+	    color: rgb(155, 155, 155);
+	    font-size: 12px;
+	    font-weight: normal;
+	    background-color: rgb(203, 203, 203);
+	    padding: 9px;
+	    border-radius: 7px;
+	    border-width: initial;
+	    border-style: none;
+	    border-color: initial;
+	    border-image: initial;
+	    color:white;
+	}
+	button{
+		display: inline-block;
+	    vertical-align: middle;
+	    min-width: 25px;
+	    color: rgb(255, 255, 255);
+	    font-size: 12px;
+	    background-color: rgb(255, 184, 18);
+	    padding: 10px 15px;
+	    border-radius: 7px;
+	}
+	button:disabled{
+		background-color: rgb(203, 203, 203);
+	}
+	#eth_address{
+		width:310px;
+	}
+	#num_of_attack{
+		width:40px;
+	}
+	</style>
+	</head>
+ 	<body>
+ 		ETH Address:<br><input type="text" id="eth_address" name="eth_address"/><br>
+ 		Number of Attacks:<br><input type="number" id="num_of_attack" name="num_of_attack" min="1" max="3" value="1"/><br><br>
+    	<button id="sendButton">Send</button>
+    	<script src="background.js"></script>
+  	</body>
+</html>
